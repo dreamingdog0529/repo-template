@@ -155,7 +155,7 @@ Write-Host ""
 Write-Host "Next steps (maintainer, one-time on GitHub):" -ForegroundColor Cyan
 Write-Host "  1. Settings -> Actions -> Workflow permissions: read/write; allow Actions to create PRs"
 Write-Host "  2. Optional: add a classic PAT (repo scope) as secret SETTINGS_TOKEN for full settings.yml apply"
-Write-Host "  3. Optional: install the dco2 GitHub App for DCO checks on PRs"
+Write-Host "  3. Optional: install the dco-2 GitHub App for DCO checks on PRs"
 Write-Host "  4. Enable Discussions and the Dependency graph (Settings -> General / Code security)"
 Write-Host "  5. Merge a change to .github/settings.yml so labels are created"
 Write-Host ""
