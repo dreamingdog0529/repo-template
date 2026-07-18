@@ -9,6 +9,13 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.5](https://github.com/dreamingdog0529/repo-template/compare/v1.0.4...v1.0.5) (2026-07-18)
+
+
+### Bug Fixes
+
+* **deps:** bump js-yaml to 4.2.0 for Dependabot advisories ([#18](https://github.com/dreamingdog0529/repo-template/issues/18)) ([689d51f](https://github.com/dreamingdog0529/repo-template/commit/689d51fb42b4bc200ecccad46979c61da06dfde5))
+
 ## [1.0.4](https://github.com/dreamingdog0529/repo-template/compare/v1.0.3...v1.0.4) (2026-07-18)
 
 
