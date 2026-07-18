@@ -45,6 +45,7 @@ After running, review the diff and fill in the remaining `TODO` markers in
 - [ ] Merge a settings change so labels from `.github/settings.yml` are created
 - [ ] Confirm squash-only merge is applied (or set manually to match `settings.yml`)
 - [ ] Enable GitHub Discussions and Dependency graph (Settings → General / Code security)
+- [ ] Review [docs/security-hardening.md](docs/security-hardening.md) and work through its security health checklist
 
 ## 4. Verification
 
