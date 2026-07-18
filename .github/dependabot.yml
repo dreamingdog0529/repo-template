@@ -10,6 +10,16 @@ updates:
       prefix: "chore"
       include: "scope"
 
+  # Lockfile for the apply-settings helper (.github/scripts/apply-settings.js).
+  - package-ecosystem: npm
+    directory: /.github/scripts
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
   # TODO: Enable the ecosystem(s) your project uses. Examples:
   #
   # - package-ecosystem: npm          # Node.js (package.json)

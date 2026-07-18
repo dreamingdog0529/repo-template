@@ -22,17 +22,22 @@ on:
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
   settings:
     runs-on: ubuntu-latest
     if: github.repository_owner == github.event.repository.owner.login
+    permissions:
+      contents: read
+      issues: write
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
+      # Install from the lockfile so the package tree is pinned by integrity hash
+      # (OpenSSF Scorecard Pinned-Dependencies).
       - name: Install js-yaml
-        run: npm install js-yaml
+        working-directory: .github/scripts
+        run: npm ci --ignore-scripts
 
       - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
         env:
