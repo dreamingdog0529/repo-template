@@ -2,7 +2,7 @@ name: Spell Check
 
 on:
   push:
-    branches: [{{DEFAULT_BRANCH}}]
+    branches: [main]
     paths:
       - "**.md"
       - "**.txt"

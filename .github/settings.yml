@@ -20,7 +20,7 @@ repository:
   has_downloads: true
   has_discussions: true
   is_template: false
-  default_branch: {{DEFAULT_BRANCH}}
+  default_branch: main
   allow_forking: true
   allow_squash_merge: true
   allow_merge_commit: false

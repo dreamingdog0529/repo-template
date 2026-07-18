@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [{{DEFAULT_BRANCH}}]
+    branches: [main, master]
   pull_request:
-    branches: [{{DEFAULT_BRANCH}}]
+    branches: [main, master]
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
@@ -25,8 +25,23 @@ jobs:
       #   - uses: actions/setup-dotnet@v6   # .NET
       #   - uses: dtolnay/rust-toolchain    # Rust
 
+      # The initializer (scripts/init-template.ps1) fills in the build/test
+      # commands. Until then these steps no-op so the template's own CI stays
+      # green; after initialization they run your real commands.
       - name: Build
-        run: {{BUILD_COMMAND}}
+        shell: bash
+        run: |
+          cmd='{{BUILD_COMMAND}}'
+          case "$cmd" in
+            *"{{"*) echo "No build command configured yet — run scripts/init-template.ps1. Skipping." ;;
+            *) eval "$cmd" ;;
+          esac
 
       - name: Test
-        run: {{TEST_COMMAND}}
+        shell: bash
+        run: |
+          cmd='{{TEST_COMMAND}}'
+          case "$cmd" in
+            *"{{"*) echo "No test command configured yet — run scripts/init-template.ps1. Skipping." ;;
+            *) eval "$cmd" ;;
+          esac

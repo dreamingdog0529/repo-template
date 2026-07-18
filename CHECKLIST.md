@@ -25,7 +25,6 @@ It prompts for (or accepts as parameters):
 | `{{YEAR}}` | Copyright year |
 | `{{BUILD_COMMAND}}` | Build command for CI / Task |
 | `{{TEST_COMMAND}}` | Test command for CI / Task |
-| `{{DEFAULT_BRANCH}}` | Default branch (usually `main`) |
 
 After running, review the diff and fill in the remaining `TODO` markers in
 `README.md`, `README_ja.md`, `ROADMAP.md`, and `docs/development.md`.

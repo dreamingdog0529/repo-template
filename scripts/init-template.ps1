@@ -32,7 +32,6 @@ param(
     [string]$Year,
     [string]$BuildCommand,
     [string]$TestCommand,
-    [string]$DefaultBranch,
     # Keep CHECKLIST.md and this init script instead of removing them at the end.
     [switch]$KeepInitFiles,
     # Skip all prompts; fail if a required value is missing.
@@ -67,7 +66,6 @@ $Author        = Get-Value $Author         "Copyright holder"              "$Pro
 $Year          = Get-Value $Year           "Copyright year"                ([string](Get-Date).Year)
 $BuildCommand  = Get-Value $BuildCommand   "Build command"                 'echo "TODO: build"'
 $TestCommand   = Get-Value $TestCommand    "Test command"                  'echo "TODO: test"'
-$DefaultBranch = Get-Value $DefaultBranch  "Default branch"                "main"
 
 if (-not $Owner) { throw "GitHub owner/org is required." }
 
@@ -81,7 +79,6 @@ $replacements = [ordered]@{
     '{{YEAR}}'            = $Year
     '{{BUILD_COMMAND}}'   = $BuildCommand
     '{{TEST_COMMAND}}'    = $TestCommand
-    '{{DEFAULT_BRANCH}}'  = $DefaultBranch
 }
 
 Write-Host ""
