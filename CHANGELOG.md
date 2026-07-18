@@ -9,6 +9,13 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.3](https://github.com/dreamingdog0529/repo-template/compare/v1.0.2...v1.0.3) (2026-07-18)
+
+
+### Documentation
+
+* fix DCO GitHub App slug from dco2 to dco-2 ([#14](https://github.com/dreamingdog0529/repo-template/issues/14)) ([d58ce93](https://github.com/dreamingdog0529/repo-template/commit/d58ce93185d66505be32d59ade711c54ae603e9a))
+
 ## [1.0.2](https://github.com/dreamingdog0529/repo-template/compare/v1.0.1...v1.0.2) (2026-07-18)
 
 
