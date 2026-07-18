@@ -9,6 +9,13 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.4](https://github.com/dreamingdog0529/repo-template/compare/v1.0.3...v1.0.4) (2026-07-18)
+
+
+### CI/CD
+
+* harden workflows for OpenSSF Scorecard alerts ([#16](https://github.com/dreamingdog0529/repo-template/issues/16)) ([552876a](https://github.com/dreamingdog0529/repo-template/commit/552876a61992a7da338f3f2e4d2855325b3e5320))
+
 ## [1.0.3](https://github.com/dreamingdog0529/repo-template/compare/v1.0.2...v1.0.3) (2026-07-18)
 
 
