@@ -9,6 +9,13 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.2](https://github.com/dreamingdog0529/repo-template/compare/v1.0.1...v1.0.2) (2026-07-18)
+
+
+### Documentation
+
+* declutter root and placeholder the acknowledgments ([#12](https://github.com/dreamingdog0529/repo-template/issues/12)) ([6daeaf0](https://github.com/dreamingdog0529/repo-template/commit/6daeaf09e031c1de36bf88126344dc4da2dacdeb))
+
 ## [1.0.1](https://github.com/dreamingdog0529/repo-template/compare/v1.0.0...v1.0.1) (2026-07-18)
 
 
