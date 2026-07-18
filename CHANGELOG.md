@@ -9,6 +9,14 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.1](https://github.com/dreamingdog0529/repo-template/compare/v1.0.0...v1.0.1) (2026-07-18)
+
+
+### CI/CD
+
+* codify default-branch protection in settings.yml ([#9](https://github.com/dreamingdog0529/repo-template/issues/9)) ([1f716f1](https://github.com/dreamingdog0529/repo-template/commit/1f716f1476d74190e7a71e75af5be4ad6f552193))
+* pin github actions to shas and add supply-chain hardening guide ([#11](https://github.com/dreamingdog0529/repo-template/issues/11)) ([0d7033f](https://github.com/dreamingdog0529/repo-template/commit/0d7033fc669863f59b14d22bd5115cc4491de397))
+
 ## 1.0.0 (2026-07-18)
 
 
