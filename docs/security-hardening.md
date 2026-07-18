@@ -5,7 +5,7 @@ focuses on software supply-chain defenses: the CI/CD pipeline, third-party
 dependencies, and — increasingly — AI agent tooling.
 
 For reporting vulnerabilities in {{PROJECT_NAME}} itself, see
-[SECURITY.md](../SECURITY.md).
+[SECURITY.md](../.github/SECURITY.md).
 
 ## Why this matters
 

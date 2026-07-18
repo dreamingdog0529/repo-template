@@ -142,7 +142,7 @@ cd {{REPO_NAME}}
 ```
 
 Full development and build instructions: **[docs/development.md](docs/development.md)**
-How to contribute: **[CONTRIBUTING.md](CONTRIBUTING.md)**
+How to contribute: **[CONTRIBUTING.md](.github/CONTRIBUTING.md)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,9 +159,9 @@ See the [open issues](https://github.com/{{OWNER}}/{{REPO_NAME}}/issues) and
 
 ## Contributing
 
-Contributions are welcome. Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** for the
+Contributions are welcome. Please read **[CONTRIBUTING.md](.github/CONTRIBUTING.md)** for the
 workflow (Conventional Commits, DCO sign-off, PR process) and our
-[Code of Conduct](CODE_OF_CONDUCT.md).
+[Code of Conduct](.github/CODE_OF_CONDUCT.md).
 
 Thanks to everyone who has contributed to {{PROJECT_NAME}}. This list is updated automatically from git history.
 
@@ -192,11 +192,11 @@ Repository automation and community files are adapted from
 
 | Document | Purpose |
 |----------|---------|
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Develop, test, PRs, DCO, CI/CD, releases |
-| [SUPPORT.md](SUPPORT.md) | How to get help |
+| [CONTRIBUTING.md](.github/CONTRIBUTING.md) | Develop, test, PRs, DCO, CI/CD, releases |
+| [SUPPORT.md](.github/SUPPORT.md) | How to get help |
 | [ROADMAP.md](ROADMAP.md) | Direction and how to propose work |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
-| [SECURITY.md](SECURITY.md) | Private vulnerability reporting |
+| [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md) | Community standards |
+| [SECURITY.md](.github/SECURITY.md) | Private vulnerability reporting |
 | [CODEOWNERS](CODEOWNERS) | Default code review owners |
 | [CHANGELOG.md](CHANGELOG.md) | Release history |
 | [LICENSE](LICENSE) | MIT license text |
@@ -217,9 +217,8 @@ MIT © {{YEAR}} {{AUTHOR}}
 
 ## Acknowledgments
 
-- [container-registry/oss-project-template](https://github.com/container-registry/oss-project-template) — automation and community files
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) — README structure
-- [awesome-readme](https://github.com/matiassingers/awesome-readme) — README inspiration
-- [Shields.io](https://shields.io/) — badges
+<!-- TODO: List the resources, libraries, and people your project builds on. Replace the example below. -->
+
+- [Resource name](https://example.com) — what it provided
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

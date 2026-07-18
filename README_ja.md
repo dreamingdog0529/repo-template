@@ -142,7 +142,7 @@ cd {{REPO_NAME}}
 ```
 
 詳細な開発・ビルド手順: **[docs/development.md](docs/development.md)**
-コントリビュート手順: **[CONTRIBUTING.md](CONTRIBUTING.md)**
+コントリビュート手順: **[CONTRIBUTING.md](.github/CONTRIBUTING.md)**
 
 <p align="right">(<a href="#readme-top">トップへ戻る</a>)</p>
 
@@ -160,8 +160,8 @@ cd {{REPO_NAME}}
 ## コントリビュート
 
 コントリビュートを歓迎します。ワークフロー（Conventional Commits・DCO サインオフ・PR 手順）は
-**[CONTRIBUTING.md](CONTRIBUTING.md)** を、コミュニティ標準は
-[行動規範](CODE_OF_CONDUCT.md) を参照してください。
+**[CONTRIBUTING.md](.github/CONTRIBUTING.md)** を、コミュニティ標準は
+[行動規範](.github/CODE_OF_CONDUCT.md) を参照してください。
 
 貢献者一覧は英語 README の [Contributors](README.md#contributing) を参照してください（git 履歴から自動更新）。
 
@@ -177,11 +177,11 @@ cd {{REPO_NAME}}
 
 | 文書 | 内容 |
 |------|------|
-| [CONTRIBUTING.md](CONTRIBUTING.md) | 開発・テスト・PR・DCO・CI/CD・リリース |
-| [SUPPORT.md](SUPPORT.md) | サポートの受け方 |
+| [CONTRIBUTING.md](.github/CONTRIBUTING.md) | 開発・テスト・PR・DCO・CI/CD・リリース |
+| [SUPPORT.md](.github/SUPPORT.md) | サポートの受け方 |
 | [ROADMAP.md](ROADMAP.md) | 方向性と提案の仕方 |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | 行動規範 |
-| [SECURITY.md](SECURITY.md) | 脆弱性の非公開報告 |
+| [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md) | 行動規範 |
+| [SECURITY.md](.github/SECURITY.md) | 脆弱性の非公開報告 |
 | [CODEOWNERS](CODEOWNERS) | デフォルトのレビュー担当 |
 | [CHANGELOG.md](CHANGELOG.md) | 変更履歴 |
 | [LICENSE](LICENSE) | MIT ライセンス本文 |
@@ -202,9 +202,8 @@ MIT © {{YEAR}} {{AUTHOR}}
 
 ## 謝辞
 
-- [container-registry/oss-project-template](https://github.com/container-registry/oss-project-template) — 自動化・コミュニティ文書
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) — README 構成
-- [awesome-readme](https://github.com/matiassingers/awesome-readme) — README の着想
-- [Shields.io](https://shields.io/) — バッジ
+<!-- TODO: プロジェクトが依拠するリソース・ライブラリ・人物を列挙してください。下の例は置き換えてください。 -->
+
+- [リソース名](https://example.com) — 提供内容
 
 <p align="right">(<a href="#readme-top">トップへ戻る</a>)</p>
