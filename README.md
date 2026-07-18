@@ -166,6 +166,19 @@ workflow (Conventional Commits, DCO sign-off, PR process) and our
 Thanks to everyone who has contributed to {{PROJECT_NAME}}. This list is updated automatically from git history.
 
 <!-- readme: contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/dreamingdog0529">
+                    <img src="https://avatars.githubusercontent.com/u/301185108?v=4" width="100;" alt="dreamingdog0529"/>
+                    <br />
+                    <sub><b>dreamingdog0529</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: contributors -end -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
