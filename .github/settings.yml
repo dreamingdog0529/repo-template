@@ -146,3 +146,24 @@ code_scanning:
   # Add your project languages here once code scanning is enabled, e.g.
   #   languages: [actions, javascript, python, go, csharp, ...]
   languages: [actions]
+
+# Branch protection for the default branch.
+# Applied by apply-settings.yml — requires a classic PAT in secret SETTINGS_TOKEN,
+# because GITHUB_TOKEN cannot manage branch protection.
+branches:
+  main:
+    protection:
+      required_status_checks:
+        strict: true
+        # Match the required CI check name(s) for your project.
+        contexts:
+          - "Build and test"
+      enforce_admins: true
+      required_pull_request_reviews:
+        required_approving_review_count: 0
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false
+      restrictions: null
+      required_linear_history: false
+      allow_force_pushes: false
+      allow_deletions: false
