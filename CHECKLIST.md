@@ -41,7 +41,7 @@ After running, review the diff and fill in the remaining `TODO` markers in
 
 - [ ] Settings → Actions → Workflow permissions: **read/write**; allow Actions to create PRs
 - [ ] Optional: create a classic PAT with `repo` scope → secret `SETTINGS_TOKEN` (full `settings.yml` apply)
-- [ ] Optional: install [dco2](https://github.com/apps/dco2) for DCO checks on PRs
+- [ ] Optional: install [dco-2](https://github.com/apps/dco-2) for DCO checks on PRs
 - [ ] Merge a settings change so labels from `.github/settings.yml` are created
 - [ ] Confirm squash-only merge is applied (or set manually to match `settings.yml`)
 - [ ] Enable GitHub Discussions and Dependency graph (Settings → General / Code security)
