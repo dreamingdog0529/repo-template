@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [{{DEFAULT_BRANCH}}]
+  pull_request:
+    branches: [{{DEFAULT_BRANCH}}]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # TODO: Set up your language toolchain, e.g.
+      #   - uses: actions/setup-node@v4     # Node.js
+      #   - uses: actions/setup-go@v5       # Go
+      #   - uses: actions/setup-python@v5   # Python
+      #   - uses: actions/setup-dotnet@v6   # .NET
+      #   - uses: dtolnay/rust-toolchain    # Rust
+
+      - name: Build
+        run: {{BUILD_COMMAND}}
+
+      - name: Test
+        run: {{TEST_COMMAND}}
