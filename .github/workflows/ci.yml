@@ -10,20 +10,25 @@ concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Least privilege: build/test only needs to read the repository contents.
+permissions:
+  contents: read
+
 jobs:
   build-and-test:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-      # TODO: Set up your language toolchain, e.g.
-      #   - uses: actions/setup-node@v4     # Node.js
-      #   - uses: actions/setup-go@v5       # Go
-      #   - uses: actions/setup-python@v5   # Python
-      #   - uses: actions/setup-dotnet@v6   # .NET
-      #   - uses: dtolnay/rust-toolchain    # Rust
+      # TODO: Set up your language toolchain. Pin any action you add to a full
+      # commit SHA with a version comment (see docs/security-hardening.md), e.g.
+      #   - uses: actions/setup-node@<sha>     # v4  (Node.js)
+      #   - uses: actions/setup-go@<sha>       # v5  (Go)
+      #   - uses: actions/setup-python@<sha>   # v5  (Python)
+      #   - uses: actions/setup-dotnet@<sha>   # v6  (.NET)
+      #   - uses: dtolnay/rust-toolchain@<sha> # stable  (Rust)
 
       # The initializer (scripts/init-template.ps1) fills in the build/test
       # commands. Until then these steps no-op so the template's own CI stays
