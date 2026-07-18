@@ -35,7 +35,7 @@ After running, review the diff and fill in the remaining `TODO` markers in
 - [ ] Set real `build`/`test` commands (they were seeded from your answers)
 - [ ] Enable the matching ecosystem in `.github/dependabot.yml`
 - [ ] Adjust `.github/labeler.yml` paths to your layout
-- [ ] Set language(s) in `.github/settings.yml` under `code_scanning` (once enabled)
+- [ ] Add project languages to the matrix in `.github/workflows/codeql.yml` (template ships `actions` only)
 
 ## 3. Maintainer one-time (GitHub UI / secrets)
 

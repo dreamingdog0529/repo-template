@@ -8,11 +8,13 @@ on:
 # Public repos: enable Dependency graph if this job 404s with GITHUB_TOKEN.
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7

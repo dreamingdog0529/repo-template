@@ -32,8 +32,10 @@ implicit trust.
 | Automated action/dependency update PRs | `.github/dependabot.yml` |
 | Dependency review on PRs (`fail-on-severity: high`) | `.github/workflows/dependency-review.yml` |
 | OpenSSF Scorecard analysis | `.github/workflows/scorecard.yml` |
+| CodeQL SAST on push/PR + weekly | `.github/workflows/codeql.yml` |
 | Secret scanning + push protection, Dependabot security updates | `.github/settings.yml` |
-| Least-privilege `permissions:` on every workflow | `.github/workflows/*.yml` |
+| Least-privilege `permissions:` (read at top-level, write per-job) | `.github/workflows/*.yml` |
+| npm install pinned via lockfile integrity hashes | `.github/scripts/package-lock.json` |
 | DCO sign-off + Conventional Commits (provenance) | `lefthook.yml`, `.githooks/` |
 
 The sections below explain how to keep these working and how to extend them once
@@ -83,16 +85,23 @@ tags to SHAs.
 
 ## 2. Least-privilege workflow permissions
 
-Every workflow declares an explicit `permissions:` block scoped to what it needs;
-`ci.yml`, for instance, only reads contents:
+Every workflow declares an explicit top-level `permissions:` block that is
+**read-only** (OpenSSF Scorecard Token-Permissions). Jobs that need write access
+elevate only the scopes they use:
 
 ```yaml
 permissions:
   contents: read
+
+jobs:
+  release:
+    permissions:
+      contents: write
+      pull-requests: write
 ```
 
-Grant the minimum, and elevate per-job rather than per-workflow when only one job
-needs more. Never rely on the default token scope.
+Never grant write at the workflow top level, and never rely on the default token
+scope.
 
 ## 3. Dependency auditing (after you choose a stack)
 
@@ -169,7 +178,9 @@ substantially.
 
 - [ ] All actions are pinned to commit SHAs with a version comment
 - [ ] Dependabot is enabled for the `github-actions` ecosystem
-- [ ] Every workflow sets explicit least-privilege `permissions:`
+- [ ] Every workflow sets top-level read-only `permissions:` and elevates per job
+- [ ] Shell package installs use a lockfile (`npm ci`) rather than floating `npm install`
+- [ ] CodeQL (or another SAST) runs on push and pull requests
 - [ ] Secret scanning and push protection are enabled
 
 **Dependencies**
