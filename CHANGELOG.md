@@ -9,6 +9,17 @@ This file is maintained automatically by [Release Please](https://github.com/goo
 from Conventional Commits. Add user-facing notes under `[Unreleased]` if you want to
 call something out before the next release.
 
+## [1.0.6](https://github.com/dreamingdog0529/repo-template/compare/v1.0.5...v1.0.6) (2026-11-20)
+
+
+### Miscellaneous
+
+* **deps:** bump actions/checkout from 7.0.0 to 7.0.1 ([#24](https://github.com/dreamingdog0529/repo-template/issues/24)) ([5e5dc43](https://github.com/dreamingdog0529/repo-template/commit/5e5dc435112384e7d6d944e790a3efc787666d98))
+* **deps:** bump actions/labeler from 6.2.0 to 7.0.0 ([#22](https://github.com/dreamingdog0529/repo-template/issues/22)) ([2c21c14](https://github.com/dreamingdog0529/repo-template/commit/2c21c14a3eaff68108da2c054e602004ad667ce7))
+* **deps:** bump github/codeql-action to 4.37.3 (init + analyze) ([#26](https://github.com/dreamingdog0529/repo-template/issues/26)) ([4407902](https://github.com/dreamingdog0529/repo-template/commit/44079022503c8f8ac7f4d813bbedb80fbeafc2f0))
+* **deps:** bump github/codeql-action/upload-sarif from 4.37.1 to 4.37.3 ([#23](https://github.com/dreamingdog0529/repo-template/issues/23)) ([f546d0c](https://github.com/dreamingdog0529/repo-template/commit/f546d0ccd621577c072f0d590724cf1b9db5c4fe))
+* **deps:** bump ossf/scorecard-action from 2.4.3 to 2.4.4 ([#20](https://github.com/dreamingdog0529/repo-template/issues/20)) ([d863140](https://github.com/dreamingdog0529/repo-template/commit/d8631402e476c7a64ca47f35982e0886dd58e942))
+
 ## [1.0.5](https://github.com/dreamingdog0529/repo-template/compare/v1.0.4...v1.0.5) (2026-07-18)
 
 
